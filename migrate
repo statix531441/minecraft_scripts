@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+java -jar chunker-cli-1.17.0.jar -i "$1" -f JAVA_1_21_1 -o "$2"

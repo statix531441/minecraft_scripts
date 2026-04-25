@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Move this file into the server directory and run
+
+mkdir -p mods/
+cd mods
+
+# Fabric API
+wget https://cdn.modrinth.com/data/P7dR8mSH/versions/IpaMcBLh/fabric-api-0.116.11%2B1.21.1.jar
+
+
+# FerriteCore: Server and Client Side Optimizations
+wget https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar
+
+
+# Aether: Adds a new dimension
+wget https://cdn.modrinth.com/data/YhmgMVyu/versions/NSqdh1i9/aether-1.21.1-1.5.11-fabric.jar
+## Dependencies: owo-lib
+wget https://cdn.modrinth.com/data/ccKDOlHs/versions/JB1fLQnc/owo-lib-0.12.15.4%2B1.21.jar
