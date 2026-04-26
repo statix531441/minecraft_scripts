@@ -1,9 +1,26 @@
 #!/usr/bin/env bash
 
-# Move this file into the server directory and run
+usage() {
+  echo "Usage: $0 <minecraft 1.21.1 folder>"
+  echo "  Example: $0 ~/.local/share/PolyMC/instances/1.21.1/.minecraft"
+  exit 1  # Exit with an error code (non-zero)
+}
 
-mkdir -p mods/
-cd mods
+# Check if an argument is provided
+if [ $# -eq 0 ]; then
+  echo "Error: No folder provided."
+  usage  # Call usage() and exit
+fi
+ 
+# Greet the user
+mc_folder="$1"
+
+mkdir -p "$mc_folder/mods/"
+cd "$mc_folder/mods/"
+
+
+
+
 
 # Fabric API
 wget https://cdn.modrinth.com/data/P7dR8mSH/versions/IpaMcBLh/fabric-api-0.116.11%2B1.21.1.jar
