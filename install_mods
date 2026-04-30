@@ -65,6 +65,10 @@ download_array() {
 				done
 }
 
+# TODO: Optionally Remove Mods, Resources and Data Packs
+# 						that are not in the arrays.
+
+
 declare -A client_and_server_mods=(
 				["Fabric API"]="https://cdn.modrinth.com/data/P7dR8mSH/versions/IpaMcBLh/fabric-api-0.116.11%2B1.21.1.jar" # Fabric API
 				["Aether"]="https://cdn.modrinth.com/data/YhmgMVyu/versions/NSqdh1i9/aether-1.21.1-1.5.11-fabric.jar" # Aether: Adds a new dimension

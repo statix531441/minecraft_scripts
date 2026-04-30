@@ -105,6 +105,8 @@
 - [x] Krypton
 ---
 - [x] RightClickHarvest
+    - [x] jamlib
+    - [x] architectury
 
 
 ## Feature Mods (Client and server)
@@ -114,6 +116,7 @@
 ### QoL
 - [x] Lootr
 - [x] Easy Magic
+    - [x] puzzleslib
 - [x] Trade Cycling
 ### Difficulty/Cursed
 - [x] Creeper Overhaul* (there's also a vanilla way of just getting the appearance)
