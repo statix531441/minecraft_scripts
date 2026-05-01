@@ -84,7 +84,7 @@ declare -A client_and_server_mods=(
 				["Resourcefullib"]="https://cdn.modrinth.com/data/G1hIVOrD/versions/Hf91FuVF/resourcefullib-fabric-1.21-3.0.12.jar"
 				["Resourcefulconfig"]="https://cdn.modrinth.com/data/M1953qlQ/versions/dQh99ERC/resourcefulconfig-fabric-1.21-3.0.11.jar"
 				["Nyf's Spiders"]="https://cdn.modrinth.com/data/dOGM7ccu/versions/D1hskQ7T/nyfsspiders-fabric-1.21.1-3.0.1.jar"
-				["Distant Horizons"]="https://cdn.modrinth.com/data/uCdwusMi/versions/KkaaQtTD/DistantHorizons-3.0.2-b-1.21.1-fabric-neoforge.jar"
+				["Better Nether Map"]="https://cdn.modrinth.com/data/fdtm99de/versions/BEfm3cNd/nethermap-4.0.0-1.21.1.jar"
 )
 
 declare -A server_only_mods=(
@@ -94,7 +94,6 @@ declare -A server_only_mods=(
 				
 				# Strictly Server Only
 				["Map Distance Fix"]="https://cdn.modrinth.com/data/51BNNAng/versions/JgekedTR/mapdistancefix-fabric-1.1.1%2Bmc1.21-1.21.11.jar"
-				["Better Nether Map"]="https://cdn.modrinth.com/data/fdtm99de/versions/BEfm3cNd/nethermap-4.0.0-1.21.1.jar"
 				["ServerCore"]="https://cdn.modrinth.com/data/4WWQxlQP/versions/FDzBkBBD/servercore-fabric-1.5.10%2B1.21.1.jar"
 				["Let Me Despawn"]="https://cdn.modrinth.com/data/vE2FN5qn/versions/Wb7jqi55/letmedespawn-1.21.x-fabric-1.5.0.jar"
 				["Almanac"]="https://cdn.modrinth.com/data/Gi02250Z/versions/hUgNmeCO/Almanac-1.21.1-2-fabric-1.5.2.jar"
@@ -116,6 +115,8 @@ declare -A client_pri_A=(
 )
 
 declare -A client_pri_B=(
+				["Distant Horizons"]="https://cdn.modrinth.com/data/uCdwusMi/versions/KkaaQtTD/DistantHorizons-3.0.2-b-1.21.1-fabric-neoforge.jar"
+
 				["FerriteCore"]="https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar" # FerriteCore: Server and Client Side Optimizations
 
 
