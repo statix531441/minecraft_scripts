@@ -40,20 +40,20 @@
 
 # 3. Client High Prio
 
-[Krypton](https://cdn.modrinth.com/data/fQEb0iXm/versions/Acz3ttTp/krypton-0.2.8.jar)
+- [ ] [Krypton](https://cdn.modrinth.com/data/fQEb0iXm/versions/Acz3ttTp/krypton-0.2.8.jar)
 
 
 # 4. Client Low Prio
 
-[Distant Horizons](https://cdn.modrinth.com/data/uCdwusMi/versions/KkaaQtTD/DistantHorizons-3.0.2-b-1.21.1-fabric-neoforge.jar)
-[FerriteCore](https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar) # FerriteCore: Server and Client Side Optimizations
-[Sodium](https://cdn.modrinth.com/data/AANobbMI/versions/u1OEbNKx/sodium-fabric-0.6.13%2Bmc1.21.1.jar)
-[Iris](https://cdn.modrinth.com/data/YL57xq9U/versions/zsoi0dso/iris-fabric-1.8.8%2Bmc1.21.1.jar)
-[Lithium](https://cdn.modrinth.com/data/gvQqBUqZ/versions/XQJtuOTA/lithium-fabric-0.15.3%2Bmc1.21.1.jar)
-[ImmediatelyFast](https://cdn.modrinth.com/data/5ZwdcRci/versions/yHztKxR5/ImmediatelyFast-Fabric-1.6.10%2B1.21.1.jar)
-[Mod Menu](https://cdn.modrinth.com/data/mOgUt4GM/versions/v6Xx3fbU/modmenu-11.0.4.jar)
-[Resourcify](https://cdn.modrinth.com/data/RLzHAoZe/versions/HrAVb2x8/Resourcify%20%281.21.1-fabric%29-1.8.1.jar)
-[fabric-language-kotlin](https://cdn.modrinth.com/data/Ha28R6CL/versions/2i87JpYj/fabric-language-kotlin-1.13.11%2Bkotlin.2.3.21.jar)
-[Bridging](https://cdn.modrinth.com/data/Gi02250Z/versions/hUgNmeCO/Almanac-1.21.1-2-fabric-1.5.2.jar)
-[Stack to Nearby Chests](https://cdn.modrinth.com/data/HtGckJVc/versions/Ycxx5lTa/stack-to-nearby-chests-mc1.21.1-0.5.10.jar)
-["EMI"]="https://cdn.modrinth.com/data/fRiHVvU7/versions/mYQ3bJs5/emi-1.1.22%2B1.21.1%2Bfabric.jar"
+- [ ] [Distant Horizons](https://cdn.modrinth.com/data/uCdwusMi/versions/KkaaQtTD/DistantHorizons-3.0.2-b-1.21.1-fabric-neoforge.jar)
+- [ ] [FerriteCore](https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar) # FerriteCore: Server and Client Side Optimizations
+- [ ] [Sodium](https://cdn.modrinth.com/data/AANobbMI/versions/u1OEbNKx/sodium-fabric-0.6.13%2Bmc1.21.1.jar)
+- [ ] [Iris](https://cdn.modrinth.com/data/YL57xq9U/versions/zsoi0dso/iris-fabric-1.8.8%2Bmc1.21.1.jar)
+- [ ] [Lithium](https://cdn.modrinth.com/data/gvQqBUqZ/versions/XQJtuOTA/lithium-fabric-0.15.3%2Bmc1.21.1.jar)
+- [ ] [ImmediatelyFast](https://cdn.modrinth.com/data/5ZwdcRci/versions/yHztKxR5/ImmediatelyFast-Fabric-1.6.10%2B1.21.1.jar)
+- [ ] [Mod Menu](https://cdn.modrinth.com/data/mOgUt4GM/versions/v6Xx3fbU/modmenu-11.0.4.jar)
+- [ ] [Resourcify](https://cdn.modrinth.com/data/RLzHAoZe/versions/HrAVb2x8/Resourcify%20%281.21.1-fabric%29-1.8.1.jar)
+- [ ] [fabric-language-kotlin](https://cdn.modrinth.com/data/Ha28R6CL/versions/2i87JpYj/fabric-language-kotlin-1.13.11%2Bkotlin.2.3.21.jar)
+- [ ] [Bridging](https://cdn.modrinth.com/data/Gi02250Z/versions/hUgNmeCO/Almanac-1.21.1-2-fabric-1.5.2.jar)
+- [ ] [Stack to Nearby Chests](https://cdn.modrinth.com/data/HtGckJVc/versions/Ycxx5lTa/stack-to-nearby-chests-mc1.21.1-0.5.10.jar)
+- [ ] ["EMI"]="https://cdn.modrinth.com/data/fRiHVvU7/versions/mYQ3bJs5/emi-1.1.22%2B1.21.1%2Bfabric.jar"
