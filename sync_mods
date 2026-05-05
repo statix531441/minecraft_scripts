@@ -1,0 +1,140 @@
+#!/usr/bin/env bash
+
+usage() {
+				echo
+}
+
+cleanup() {
+				echo
+}
+
+
+[[ -n $MC_DIR ]] || MC_DIR=. 
+
+MDUI="mods.md"
+SECTIONS=(
+				1
+				2
+)
+
+while true; do
+				case "$1" in
+								-d | --directory)
+												MC_DIR=`readlink -f "$2"`
+												shift 2
+												;;
+								-m | --markdown)
+												MDUI="$2"
+												shift 2
+												;;
+								-s | --sections)
+												IFS=',' read -r -a SECTIONS <<< "$2"
+												shift 2
+												;;
+								-h | --help)
+												help
+												exit
+												;;
+								*)
+												break
+												;;
+				esac
+done
+
+[[ -d $MC_DIR ]] || { echo "$MC_DIR directory doesn't exist"; usage; exit 1; }
+MC_DIR=`readlink -f $MC_DIR`
+
+echo "Your minecraft directory is set to: $MC_DIR"
+echo "Consider adding 'export MC_DIR=$MC_DIR' to your shell rc file"
+
+echo $MDUI
+
+declare -p SECTIONS
+
+echo "$1"
+
+MODS_DIR="$MC_DIR/mods"
+RESOURCEPACKS_DIR="$MC_DIR/resourcepacks"
+DATAPACKS_DIR="$MC_DIR/world/datapacks"
+
+mkdir -p $MODS_DIR
+# mkdir -p $RESOURCEPACKS_DIR
+# mkdir -p $DATAPACKS_DIR
+
+in_array() {
+				item="$1"
+				local -n array="$2"
+				for element in "${array[@]}"; do
+								if [[ $item == $element ]]; then
+												exit 0
+								fi
+				done
+				exit 1
+}
+
+declare -A links_array
+
+i=1
+while read -r line; do
+				section_pattern="^#\s([0-9]{1,2})\.\s(.*)$"
+				if [[ $line =~ $section_pattern ]]; then
+								section_number=${BASH_REMATCH[1]}
+								section_name=${BASH_REMATCH[2]}
+								# echo "Le Sectione $section_number: $section_name"
+				fi
+			
+				if ( in_array $section_number SECTIONS ); then
+								mod_pattern="^.*\-\s\[(.)\]\s\[(.*)\]\((.*)\).*$"
+								if [[ $line =~ $mod_pattern ]]; then
+												selection="${BASH_REMATCH[1]}"
+												mod_name="${BASH_REMATCH[2]}"
+												link="${BASH_REMATCH[3]}"
+												
+												if [[ -v "links_array[$link]" ]]; then
+																if  [[ ( ${links_array[$link]} -eq 0  &&  $selection == "x" ) || \
+																				( ${links_array[$link]} -eq 1  &&  $selection == " " ) ]]; then
+																				declare -p links_array
+																				echo "Conflict Spotted at $i"
+																				grep -n "\-\s\[.\].*\($link\)" "$MDUI"
+																				exit 1
+																fi
+												fi
+
+												if [[ $selection == " " ]]; then
+																links_array[$link]=0
+												elif [[ $selection == "x" ]]; then
+																links_array[$link]=1
+												else 
+																echo "Weird Selection '$selection' at line $i"
+																echo "$line"
+																exit 1
+												fi
+								fi
+				fi
+				((i++))
+done < "$MDUI"
+
+
+# declare -p links_array
+
+for link in "${!links_array[@]}"; do
+				filename=$(python3 -c "import sys, urllib.parse; print(urllib.parse.unquote('${link##*/}'))")								
+				filepath="$MODS_DIR/$filename"
+
+				if [[ -f "$filepath" ]]; then
+								if [[ "${links_array[$link]}" -eq 0 ]]; then
+												echo "Removing $filepath"
+												rm $filepath
+								elif [[ "${links_array[$link]}" -eq 1 ]]; then
+												echo "$filepath already exists. Continuing..."
+								else
+												echo "Invalid Value: ${links_array[$link]} for $filename"
+												exit 1
+								fi
+				elif [[ "${links_array[$link]}" -eq 1 ]]; then
+								echo "wget-ing $filename"
+								wget -q --show-progress -O "$filepath" "$link"
+				else
+								: # echo "$filename doesn't exist and isn't being installed"
+				fi
+done
