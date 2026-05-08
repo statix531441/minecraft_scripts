@@ -1,5 +1,10 @@
 # 1. Client-Server Mods (Necessary)
 
+## Monitor these
+
+- [x] [Lootr](https://cdn.modrinth.com/data/EltpO5cN/versions/SojdASBz/lootr-fabric-1.21.1-1.11.37.120.jar)
+
+## Works fine
 - [x] [Fabric API](https://cdn.modrinth.com/data/P7dR8mSH/versions/IpaMcBLh/fabric-api-0.116.11%2B1.21.1.jar)
     Bla bla
 - [x] [Aether](https://cdn.modrinth.com/data/YhmgMVyu/versions/NSqdh1i9/aether-1.21.1-1.5.11-fabric.jar)
@@ -10,7 +15,6 @@
 - [x] [Platform](https://cdn.modrinth.com/data/i6fiqm5y/versions/WeSu6O41/Platform-fabric-1.21.1-1.3.jar)
     * Says it's based on architectury but not required as dep
     * Probably comes pre-packaged with it
-- [x] [Lootr](https://cdn.modrinth.com/data/EltpO5cN/versions/Rxyok2IC/lootr-fabric-1.21.1-1.11.37.118.jar)
 - [x] [Easy Magic](https://cdn.modrinth.com/data/9hx3AbJM/versions/LLLfoeWJ/EasyMagic-v21.1.4-1.21.1-Fabric.jar)
     - [x] [PuzzlesLib](https://cdn.modrinth.com/data/QAGBst4M/versions/L007zH3l/PuzzlesLib-v21.1.39-1.21.1-Fabric.jar)
 - [x] [Trade Cycling](https://cdn.modrinth.com/data/qpPoAL6m/versions/g1AEWhmh/trade-cycling-fabric-1.21.1-1.0.20.jar)
@@ -29,7 +33,26 @@ Not Necessary but organize later
 
 # 2. Server-Only Mods
 
-- [x] [Distant Horizons](https://cdn.modrinth.com/data/uCdwusMi/versions/oYXIfeus/DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar)
+## Structure and World Generation Mods
+
+- [x] [Tidal Towns](https://cdn.modrinth.com/data/EEIwvQVo/versions/xWUN0cml/tidal-towns-1.3.4.jar)
+- [x] [Hopo Better Underwater Ruins](https://cdn.modrinth.com/data/BuWCQzqf/versions/cCUmdH6y/HopoBetterUnderwaterRuins-%5B1.21.1-1.21.3%5D-1.2.1b.jar)
+- [x] [Hopo Better Mineshafts](https://cdn.modrinth.com/data/9IxCUYAP/versions/1X6Zpz8Z/HopoBetterMineshaft-%5B1.21-1.21.3%5D-1.3.0b.jar)
+- [x] [Geophilic](https://cdn.modrinth.com/data/hl5OLM95/versions/Vk4cYx6F/Geophilic%20v3.4.6.mod.jar)
+- [x] [Geophilic Backport](https://cdn.modrinth.com/data/uTfd4Kbj/versions/gA1uuNv3/GeophilicBackported-v1.3.3%201.21.1.jar)
+
+- [ ] [Tectonic](https://cdn.modrinth.com/data/lWDHr9jE/versions/cXSQRWNy/tectonic-3.0.22-fabric-21.1.jar)
+    - [ ] [Lithostitched](https://cdn.modrinth.com/data/XaDC71GB/versions/fC8zqqCw/lithostitched-1.7.2-fabric-21.1.jar)
+- [x] [Lithosphere](https://cdn.modrinth.com/data/iv9jp2k9/versions/wqHGyD4G/lithosphere-1.7.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric)
+- [x] [Yggdrasil](https://cdn.modrinth.com/data/hwNDseBp/versions/RPuu7Vml/Yggdrasil-6.0.0.jar)
+
+## QOL
+
+- [x] [Underwater Enchanting](https://cdn.modrinth.com/data/e8JtTY4h/versions/W9F80lKW/underwaterenchanting-1.21.1-2.9.jar)
+    - [x] [Collective](https://cdn.modrinth.com/data/e0M1UDsY/versions/6xEh8Qbr/collective-1.21.1-8.22.jar)
+
+## Optimization Mods
+
 - [x] [FerriteCore](https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar)
 - [x] [Lithium](https://cdn.modrinth.com/data/gvQqBUqZ/versions/XQJtuOTA/lithium-fabric-0.15.3%2Bmc1.21.1.jar)
 - [x] [ModernFix](https://cdn.modrinth.com/data/nmDcB62a/versions/NnNX8LBn/modernfix-fabric-5.25.1%2Bmc1.21.1.jar)
@@ -50,6 +73,11 @@ Not Necessary but organize later
     - [x] [Architectury](https://cdn.modrinth.com/data/lhGA9TYQ/versions/Wto0RchG/architectury-13.0.8-fabric.jar)
 
 - [x] [Map Distance Fix](https://cdn.modrinth.com/data/51BNNAng/versions/JgekedTR/mapdistancefix-fabric-1.1.1%2Bmc1.21-1.21.11.jar)
+
+## Cosmetic Mods
+
+- [x] [Distant Horizons](https://cdn.modrinth.com/data/uCdwusMi/versions/oYXIfeus/DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar)
+    Monitor this
 
 # 3. Client High Prio
 
